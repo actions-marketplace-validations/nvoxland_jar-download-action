@@ -26,7 +26,7 @@ jobs:
           password: ${{ secrets.PACKAGE_PUBLISH_GITHUB_TOKEN }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v6
         with:
           context: docker
           push: true
